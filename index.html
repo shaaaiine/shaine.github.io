@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning & Career Roadmap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 
+      Chosen Palette: Calm Neutrals
+      - Background: #FDFBF8 (Warm Off-White)
+      - Text: #4B4B4B (Dark Gray)
+      - Primary Accent: #B9929F (Dusty Rose)
+      - Secondary Accent / Hover: #8C6D76 (Muted Mauve)
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8;
+            color: #4B4B4B;
+        }
+        .nav-link {
+            transition: color 0.3s, border-color 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #B9929F;
+            border-bottom-color: #B9929F;
+        }
+        .tab-button.active {
+            background-color: #B9929F;
+            color: #FDFBF8;
+        }
+        .tab-button {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .accordion-button.active .accordion-arrow {
+            transform: rotate(180deg);
+        }
+        .accordion-arrow {
+            transition: transform 0.3s;
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Style for indented references if needed */
+        .references-list li {
+            text-indent: -1.5em;
+            padding-left: 1.5em;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-[#8C6D76]">My Roadmap</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#who" class="nav-link pb-1">WHO</a>
+                <a href="#why" class="nav-link pb-1">WHY</a>
+                <a href="#how" class="nav-link pb-1">HOW</a>
+                <a href="#what" class="nav-link pb-1">WHAT</a>
+                <a href="#references" class="nav-link pb-1">REFERENCES</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#who" class="block py-2 px-4 text-sm hover:bg-gray-200">WHO</a>
+            <a href="#why" class="block py-2 px-4 text-sm hover:bg-gray-200">WHY</a>
+            <a href="#how" class="block py-2 px-4 text-sm hover:bg-gray-200">HOW</a>
+            <a href="#what" class="block py-2 px-4 text-sm hover:bg-gray-200">WHAT</a>
+            <a href="#references" class="block py-2 px-4 text-sm hover:bg-gray-200">REFERENCES</a>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+        
+        <!-- Hero Section -->
+        <section class="text-center py-20 lg:py-32">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">My Learning & Career Roadmap</h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">By Shaine Boh</p>
+            <div class="max-w-2xl mx-auto">
+                 <p class="text-base md:text-lg mb-8">Hi, I’m a Year 1 CBP student with a passion for entrepreneurship, people, and purpose-driven work. This site reflects my personal and professional journey through the CPP module.</p>
+                 <a href="#who" class="bg-[#B9929F] text-white font-bold py-3 px-8 rounded-full hover:bg-[#8C6D76] transition duration-300">Start Exploring</a>
+            </div>
+        </section>
+        <!-- WHO Section -->
+        <section id="who" class="py-16 lg:py-24 fade-in-section">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold">PART 1 – WHO AM I?</h2>
+            </div>
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-3 space-y-8 text-lg leading-relaxed">
+                    <div>
+                        <h3 class="font-bold text-xl mb-2 text-[#8C6D76]">🧠 Personality</h3>
+                        <p>I am a year 1 student in the Common Business Programme and just learnt that I am an ENTJ-A or the rather popular personality type known as The Commander. ENTJs are considered to be daring, goal-driven, and natural leaders, and it is exactly what matches my self-perception. I prefer to take initiative and in activities where I can bring order, systems, or find a team a goal to achieve.</p>
+                    </div>
+                     <div>
+                        <h3 class="font-bold text-xl mb-2 text-[#8C6D76]">💪 Strengths & Skills</h3>
+                        <p>My greatest areas of interest are business strategy, service excellence, and entrepreneurship. I especially love the idea of launching my own company on the beauty market, and I have already commenced my progress, studying the approaches to branding, operations, and experience on the client side. I am also practical, though I have understood that both structure and creativity are necessary to succeed.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-2 bg-white p-8 rounded-lg shadow-lg border border-gray-200/50">
+                    <h4 class="font-bold text-2xl text-center mb-4">The Commander</h4>
+                    <p class="text-6xl text-center font-bold text-[#B9929F] mb-4">ENTJ-A</p>
+                    <div class="space-y-2 text-center">
+                        <p><span class="font-semibold">Core Traits:</span> Daring, Goal-Driven, Decisive</p>
+                        <p><span class="font-semibold">Greatest Skill:</span> My capacity to think and act decisively would be my single greatest ability. I always manage everything, to maintain the schedules, or to start conversations within the teams.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="mt-16 bg-white/50 p-8 rounded-lg shadow-sm">
+                <h3 class="font-bold text-2xl mb-6 text-center text-[#8C6D76]">🔄 Growth & Reflection</h3>
+                <div class="grid md:grid-cols-2 gap-8 text-lg leading-relaxed">
+                    <div>
+                        <h4 class="font-semibold mb-2">Resilience at the FedEx Challenge</h4>
+                        <p>An event which made me learn that lesson was when I participated in the FedEx International Trade Challenge and I represented Singapore and was forced to team up with a fellow representative of another country. The language barrier and the time pressure were very demanding in the initial stages of the project. We went to loggerheads, did not perform the way they expected us to do in the initial stages but I changed. My presentation of communications changed and we at the end came up with a market strategy that we could be proud of. That incident made me realize again that failure is a feedback and not a defeat.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2">Discipline in Action</h4>
+                        <p>A highlight of which I am particularly proud is combining work in a part time job with an internship in a DBS contact centre and still acing my requirements in school. It was not easy, yet I realised how to set priorities, endure burnout, and be disciplined, which I consider to be my essential needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- WHY Section -->
+        <section id="why" class="py-16 lg:py-24 fade-in-section">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold">PART 2 – WHY AM I HERE?</h2>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-10 text-lg leading-relaxed">
+                <div>
+                    <h3 class="font-bold text-xl mb-2 text-[#8C6D76]">📘 Why the Common Business Programme?</h3>
+                    <p>I chose the Common Business Programme because I was not eager to take a certain direction, yet I was eager to do something meaningful in the business environment. The versatility of CBP makes it appropriate to my curiosities and ambition, as CBP allows me to go into various industries before specialising.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-2 text-[#8C6D76]">💡 My Beliefs & What Drives Me</h3>
+                    <p>I also base my beliefs on individual responsibility and influence. I am sure that when you have a chance of making something better, you could do it. I appreciate resilience, more so in a rapidly-changing world and hence I attempt to become a role model by being consistent and dynamic.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-xl mb-2 text-[#8C6D76]">🌱 Values in Action: BA Cares & Uplifting Others</h3>
+                    <p>The creation of uplifting experiences is one of the things that mean a lot to me. This can be in the form of beauty services, nice service in a corporate world, or just volunteering. I love to make people feel heard, seen and of value. That is why I signed up to BA Cares, volunteering allows me to also make a difference in a way that reflects my own values and ideas of being caring and appreciative.</p>
+                </div>
+                 <div class="border-t-2 border-[#B9929F]/50 pt-8 text-center">
+                    <h3 class="font-bold text-xl mb-2 text-[#8C6D76]">🎯 My 5-10 Year Vision & Ethics</h3>
+                    <p>After five to ten years, I would be either operating my own beauty shop or working in a corporation where I will play an active role in a team's success, either in HR or in operations. I desire that people use me as an example of what to do and follow me.</p>
+                    <p class="mt-4">The importance of ethics to me is that without trust, there is no relationship whether at the personal stage or the professional one. It can be in honouring the feedback of a customer or helping out a fellow team member; in all this I believe in doing what is right even in the absence of an observing eye.</p>
+                </div>
+            </div>
+        </section>
+        <!-- HOW Section -->
+        <section id="how" class="py-16 lg:py-24 fade-in-section">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold">PART 3 – HOW DO I BRING THE WHO/WHY INTO BEING?</h2>
+                <p class="mt-4 text-lg text-gray-600">As a student of CBP, I have considered three career options which fit my strengths and interests, namely beauty entrepreneurship, content creation and a corporate job in HR or finance. These decisions also represent my nature as ENTJ-A and my intention to lead, generate values and relate with others.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-8 flex flex-wrap justify-center gap-2 md:gap-4 border-b border-gray-300">
+                    <button class="tab-button px-4 py-2 font-semibold rounded-t-lg active" data-tab="tab1">💅 Beauty Entrepreneur</button>
+                    <button class="tab-button px-4 py-2 font-semibold rounded-t-lg" data-tab="tab2">📸 Content Creator</button>
+                    <button class="tab-button px-4 py-2 font-semibold rounded-t-lg" data-tab="tab3">💼 HR / Finance Exec</button>
+                </div>
+                <div id="tab-content" class="bg-white p-8 rounded-lg shadow-lg">
+                    <div id="tab1" class="tab-pane active">
+                        <h3 class="font-bold text-2xl mb-4">Beauty Salon Owner (Entrepreneur)</h3>
+                        <div class="space-y-3 text-lg leading-relaxed">
+                            <p><strong class="text-[#8C6D76]">Responsibilities:</strong> Manage salon operations, marketing, customer service, and team training. Oversee branding, customer experience, and quality control.</p>
+                            <p><strong class="text-[#8C6D76]">Skills Needed:</strong> Customer service, social media marketing, service operations, leadership, and budgeting.</p>
+                            <p><strong class="text-[#8C6D76]">Qualifications:</strong> Business diploma, lash and nail certification, hands-on service experience.</p>
+                            <p><strong class="text-[#8C6D76]">Why this role?</strong> I desire to be a person who creates a beauty brand empowering people. It coincides with my creativity and desire to create something of mine, not only relying on business skills, but on the experience as a customer.</p>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-pane hidden">
+                        <h3 class="font-bold text-2xl mb-4">Content Creator (Lifestyle & Beauty)</h3>
+                        <div class="space-y-3 text-lg leading-relaxed">
+                             <p><strong class="text-[#8C6D76]">Responsibilities:</strong> Plan, create, and publish content across platforms. Engage audience, grow following, collaborate with brands, manage content calendar.</p>
+                            <p><strong class="text-[#8C6D76]">Skills Needed:</strong> Video editing, copywriting, digital marketing, branding, audience engagement.</p>
+                            <p><strong class="text-[#8C6D76]">Qualifications:</strong> No formal degree required; strong online presence and portfolio are key.</p>
+                            <p><strong class="text-[#8C6D76]">Why this role?</strong> I have a passion to write and depict the ideas in a visual way. The route allows me to work on my own and create a brand voice that will motivate and amuse.</p>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-pane hidden">
+                        <h3 class="font-bold text-2xl mb-4">Human Resource Executive or Finance Analyst</h3>
+                        <div class="space-y-3 text-lg leading-relaxed">
+                            <p><strong class="text-[#8C6D76]">Responsibilities (HR):</strong> Handle recruitment, staff engagement, training, payroll.</p>
+                            <p><strong class="text-[#8C6D76]">Responsibilities (Finance):</strong> Analyse budgets, financial reports, support strategic decisions.</p>
+                            <p><strong class="text-[#8C6D76]">Skills Needed:</strong> Communication, Excel, HR software, data analysis, attention to detail.</p>
+                            <p><strong class="text-[#8C6D76]">Qualifications:</strong> Business diploma with HR or finance specialisation.</p>
+                            <p><strong class="text-[#8C6D76]">Why this role?</strong> In the event that I pursue a more conventional strategy I would prefer working in an environment where I could assist individuals or make businesses more efficient. My experience as an intern at DBS has given me the awareness of these jobs, and I like both organisation and solving problems.</p>
+                        </div>
+                    </div>
+                </div>
+                 <p class="text-center italic mt-8 text-gray-600">I have also spoken to coaches at Sandbox and industry events, and they have highlighted how important it is to start experimenting early. Their advice encouraged me to try small projects, get feedback, and keep adapting.</p>
+            </div>
+        </section>
+        <!-- WHAT Section -->
+        <section id="what" class="py-16 lg:py-24 fade-in-section">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold">PART 4 – WHAT DO I DO?</h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- Accordion Item 1 -->
+                <div class="bg-white rounded-lg shadow-md border border-gray-200/50">
+                    <button class="accordion-button w-full flex justify-between items-center text-left p-6">
+                        <span class="font-bold text-xl text-[#8C6D76]">Top 3 Course Choices & Modules</span>
+                        <span class="accordion-arrow text-2xl text-[#B9929F]">↓</span>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="space-y-4 text-lg">
+                           <p><strong>1. International Trade & Business:</strong> I am attracted by this course since it gives access to international markets and business. Global Business Environment, International Trade Law and Supply Chain Management modules will provide me with the interaction knowledge of a foreign business, which is a crucial element in case I develop a beauty brand globally or manage foreign imports of my goods.</p>
+                           <p><strong>2. Accounting:</strong> With accounting, I get a good background in financial literacy, which is helpful in running a business or being employed in a corporation. Modules like Financial Accounting, Cost Accounting, and Taxation will help me understand cash flow, budgeting, and strategic financial planning.</p>
+                           <p><strong>3. Banking & Finance:</strong> This is a decision that proves my interest which might be working in corporate finance. Courses like the Investment Analysis, Bank Operations and Financial services marketing will form the knowledge base necessary within my job career like Analyzing the finance or position holders in the banking sector.</p>
+                           <p class="italic">In all the courses, I look forward to Final Year Projects and internships that bring real world utilisation. I will consider short holiday internships in order to gather experience early.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion Item 2 -->
+                 <div class="bg-white rounded-lg shadow-md border border-gray-200/50">
+                    <button class="accordion-button w-full flex justify-between items-center text-left p-6">
+                        <span class="font-bold text-xl text-[#8C6D76]">CCAs and Enrichment</span>
+                        <span class="accordion-arrow text-2xl text-[#B9929F]">↓</span>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="text-lg space-y-4">
+                            <p>I joined BA Cares, a volunteering CCA, as I like to give back. The aspect of volunteering enables me to inculcate the sense of empathy, cooperation, and responsibility, which is valuable in any profession, particularly, service and people-oriented professions, such as HR or entrepreneurship.</p>
+                            <p>External to school, I have been proactive in attempting the various part time jobs such as a cafe, and contact centre. These jobs have made me understand professionalism, patience, and time. They also made me come out of my comfort zone and learned to speak to people of various categories.</p>
+                             <p class="italic">I support the idea of setting an example. Ethical behaviour in student life is to appear, be responsible and respect others, things that I do in school and in any other place.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion Item 3 -->
+                 <div class="bg-white rounded-lg shadow-md border border-gray-200/50">
+                    <button class="accordion-button w-full flex justify-between items-center text-left p-6">
+                        <span class="font-bold text-xl text-[#8C6D76]">Continuing Education and Lifelong Learning</span>
+                        <span class="accordion-arrow text-2xl text-[#B9929F]">↓</span>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="space-y-6 text-lg">
+                           <div>
+                                <h4 class="font-semibold mb-2">1. Beauty Salon Entrepreneur</h4>
+                                <p>To pursue this path, I plan to complete a Professional Eyelash Extension Course at The Lash Academy Singapore. This course offers hands-on training along with foundational knowledge in salon operations. I also intend to take online courses in small business management and digital marketing through LinkedIn Learning to strengthen my understanding of branding, customer experience and entrepreneurship.</p>
+                           </div>
+                           <div>
+                                <h4 class="font-semibold mb-2">2. Content Creator</h4>
+                                <p>In the event I decide to become a content creator, my concentration will be on the capability of storytelling, growth of audiences, as well as video editing. Such courses as TikTok Marketing 101 on Coursera or LinkedIn Learning, or Digital Media and Content Creation are the courses that I would consider enrolling in. These will help me advance a sincere personal brand and create content that is interesting but also professional.</p>
+                           </div>
+                           <div>
+                                <h4 class="font-semibold mb-2">3. Corporate Professional in Human Resources or Finance</h4>
+                                <p>For a corporate pathway, I am considering a Bachelor of Business at SMU or NUS, with a specialisation in either Human Resources or Finance. If I select Human Resources, I may also pursue a part-time diploma from SHRI. If I opt for Finance, I will take Excel and financial analysis courses to build my technical proficiency and industry readiness.</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- References Section -->
+        <section id="references" class="py-16 lg:py-24 fade-in-section">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold">REFERENCES</h2>
+            </div>
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <ul class="references-list space-y-4 text-sm md:text-base">
+                    <li>LinkedIn Learning. (n.d.). <em>Online courses for career development</em>. <a href="https://www.linkedin.com/learning" target="_blank" class="text-[#B9929F] hover:underline break-all">https://www.linkedin.com/learning</a></li>
+                    <li>MyCareersFuture. (n.d.). <em>Explore jobs in Singapore</em>. <a href="https://www.mycareersfuture.gov.sg" target="_blank" class="text-[#B9929F] hover:underline break-all">https://www.mycareersfuture.gov.sg</a></li>
+                    <li>MySkillsFuture. (n.d.). <em>Skills & career development portal</em>. <a href="https://www.myskillsfuture.gov.sg" target="_blank" class="text-[#B9929F] hover:underline break-all">https://www.myskillsfuture.gov.sg</a></li>
+                    <li>Ngee Ann Polytechnic. (n.d.). <em>BA Cares CCA</em>. <a href="https://www.np.edu.sg/student-life/clubs-societies" target="_blank" class="text-[#B9929F] hover:underline break-all">https://www.np.edu.sg/student-life/clubs-societies</a></li>
+                    <li>Ngee Ann Polytechnic. (n.d.). <em>Common Business Programme (CBP)</em>. <a href="https://www.np.edu.sg/schools-courses/full-time-courses/common-business-programme" target="_blank" class="text-[#B9929F] hover:underline break-all">https://www.np.edu.sg/schools-courses/full-time-courses/common-business-programme</a></li>
+                    <li>Ngee Ann Polytechnic. (n.d.). <em>Go FLEX learning pathways</em>. <a href="https://www.np.edu.sg/schools-courses/go-flex" target="_blank" class="text-[#B9929F] hover:underline break-all">https://www.np.edu.sg/schools-courses/go-flex</a></li>
+                    <li>Ngee Ann Polytechnic. (n.d.). <em>Internships</em>. <a href="https://www.np.edu.sg/student-services/internships" target="_blank" class="text-[#B9929F] hover:underline break-all">https://www.np.edu.sg/student-services/internships</a></li>
+                    <li>Ngee Ann Polytechnic. (n.d.). <em>Personalised Learning Pathway (PLP) Minors</em>. <a href="https://www.np.edu.sg/schools-courses/personalised-learning-pathway-plp-minors" target="_blank" class="text-[#B9929F] hover:underline break-all">https://www.np.edu.sg/schools-courses/personalised-learning-pathway-plp-minors</a></li>
+                    <li>Ngee Ann Polytechnic. (n.d.). <em>The Sandbox – Innovation & Entrepreneurship</em>. <a href="https://www.np.edu.sg/student-life/the-sandbox-innovation-entrepreneurship" target="_blank" class="text-[#B9929F] hover:underline break-all">https://www.np.edu.sg/student-life/the-sandbox-innovation-entrepreneurship</a></li>
+                </ul>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>Hello! I'm Shaine Boh, a Year 1 Common Business Programme student at Ngee Ann Polytechnic.</p>
+        <p class="text-sm text-gray-400 mt-1">This site is a reflection of my learning journey, aspirations, and dedication to personal and professional growth.</p>
+    </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                 mobileMenu.classList.add('hidden');
+            });
+        });
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                tabPanes.forEach(pane => {
+                    if (pane.id === tabId) {
+                        pane.classList.remove('hidden');
+                        pane.classList.add('active');
+                    } else {
+                        pane.classList.add('hidden');
+                        pane.classList.remove('active');
+                    }
+                });
+            });
+        });
+        
+        // Accordion functionality
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                button.classList.toggle('active');
+                // Using max-height for smooth transition
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    // We hide it after the transition ends to allow screen readers to access it.
+                    setTimeout(() => {
+                        if (!button.classList.contains('active')) {
+                            content.classList.add('hidden');
+                        }
+                    }, 300); // Match transition duration
+                } else {
+                    content.classList.remove('hidden');
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+             // Set transition property on content
+            const content = button.nextElementSibling;
+            content.style.transition = 'max-height 0.3s ease-out';
+            content.style.overflow = 'hidden';
+            if (!button.classList.contains('active')) {
+                 content.style.maxHeight = null;
+            }
+        });
+        
+        // Navigation link active state on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+        // Fade-in sections on scroll
+        const fadeInSections = document.querySelectorAll('.fade-in-section');
+        const fadeInObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        fadeInSections.forEach(section => {
+            fadeInObserver.observe(section);
+        });
+    });
+    </script>
+</body>
+</html>
